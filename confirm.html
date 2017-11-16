@@ -4,8 +4,8 @@
 
 	<meta charset="utf-8">
 	<title>NUber</title>
-	<meta name="description" content="CSS only mobile first navigation">
-	<meta name="author" content="Ian Yates">
+	<meta name="description" content="Northeastern's Safety Escort">
+  	<meta name="author" content="Nuber Team">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
@@ -28,11 +28,47 @@
 			})
 		});
 	</script>
+	
+	<style>
+    	 .linkText{
+    		    color: #b73337;
+        	    text-decoration: none;
+       	          }
+ 	</style>
+	
 </head>
 <body>
-	<header>
-		<h1 class="logo"><a href="">NUber</a></h1>
-	</header>
+	<div class="row">
+            <div class="col-sm-12">
+                <nav class="navbar navbar-inverse navbar-fixed-top">
+                    <div class="container-fluid">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false"
+                                aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+                            <a class="navbar-brand" href="home.html">NUber</a>
+                        </div>
+                        <div id="navbar" class="navbar-collapse collapse" ng-controller="HeaderController">
+                            <ul class="nav navbar-nav navbar-right">
+                                <li><a href="lostfound.html">Lost and Found</a></li>
+                                <li><a href="home.html">Logout</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">
+                &nbsp;
+            </div>
+        </div>
+
 	<div class="container-fluid">
 		<div class="row">
 			<div class="col-sm-12 text-center">
@@ -41,29 +77,36 @@
 		</div>
 		<div class="row">
 			<div class="col-sm-12">
-				<img src="img.jpg" class="img-fluid" alt="Responsive image">
+				<img src="img.jpg" class="img-responsive" alt="Responsive image">
 			</div>
 		</div>
 		<div class="row">
 			<div class="col-sm-12 text-center ride1">
-				<label for="rideTime">ETA:</label><span class="r1">09:15 PM</span>
+				&nbsp;
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12 text-center ride1">
+				<label for="rideTime">ETA:</label><span class="r1"> 09:15 PM</span>
 			</div>
 		</div>
 		<div class="row">
 			<div class="col-sm-12 text-center ride2">
-				<label for="rideTime">Pickup Location:</label><span class="r1">Snell Library</span>
+				<label for="rideTime">Pickup Location:</label><span class="r1"> Snell Library</span>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12 text-center ride1">
+				&nbsp;
 			</div>
 		</div>
 		<div class="row">
 			<div class="col-sm-12 text-center ride2">
-				<button type="button" class="btn btn-secondary btn-xl">Track My Ride</button>
+				<button type="button" class="btn btn-danger"> Track My Ride </button>
+				<button type="button" class="btn btn-danger cancel"> Cancel Ride </button>
 			</div>
 		</div>
-		<div class="row">
-			<div class="col-sm-12 text-center ride2">
-				<button type="button" class="btn btn-secondary btn-xl cancel">Cancel Ride</button>
-			</div>
-		</div>
+		
 	</div>
 </body>
 </html>
